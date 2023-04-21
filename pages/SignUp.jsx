@@ -11,7 +11,7 @@ export default function SignUp() {
     const submitHandle = async (e) => {
         e.preventDefault()
         try{
-            const res = await axios.post("http://127.0.0.1:8000/api/register",{
+            const res = await axios.post("https://auth-test-d6po.onrender.com/api/register",{
                     username: username,
                     password : password
                 });
