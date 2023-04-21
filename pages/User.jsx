@@ -8,7 +8,7 @@ export default function User() {
 
   useEffect(()=>{
     axios.defaults.withCredentials = true;
-    axios.get("http://127.0.0.1:8000/api/user").then(res=>{
+    axios.get("https://auth-test-d6po.onrender.com/api/user").then(res=>{
         setUser(res.data);
         console.log(res)
     }).catch(err=>{
