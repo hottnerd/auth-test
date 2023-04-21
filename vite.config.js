@@ -8,7 +8,7 @@ export default defineConfig({
     port: 8000,
     proxy:{
       "^/api":{
-        target: "http://localhost:3000",
+        target: "https://auth-test-api-amzm.onrender.com",
         changeOrigin: true,
         secure: true,      
         ws: true,
