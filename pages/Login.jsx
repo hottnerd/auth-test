@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import styles from "../styles/login.module.css"
 import axios from "axios";
 import { useNavigate , redirect} from 'react-router-dom';
 
@@ -40,7 +39,7 @@ export default function Login() {
     e.preventDefault()
   };
     return (
-    <div className={styles.container}>
+    <div>
          <form>
             <label>Enter your username:</label>        
             <input
