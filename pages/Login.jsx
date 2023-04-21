@@ -15,7 +15,7 @@ export default function Login() {
     try{
         const res = await axios({
             method: 'post',
-            url: "http://127.0.0.1:8000/api/login",
+            url: "https://auth-test-d6po.onrender.com/api/login",
             data: {
                 username: username,
                 password : password
@@ -33,7 +33,7 @@ export default function Login() {
 
   const submitHandleGoogle = async (e) => {
     e.preventDefault()
-    window.location.replace("http://127.0.0.1:8000/api/auth-google");
+    window.location.replace("https://auth-test-d6po.onrender.com/api/auth-google");
   };
 
   const submitHandleFacebook = async (e) => {
